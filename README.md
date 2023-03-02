@@ -1,24 +1,24 @@
 # LEAP-Cryo-planning
 
 ##  Introduction
-A repo for planning and tracking progress on the LEAP-Cryo project: Learning ice-sheet flow with physics-based and machine learning models. This project is funded by the Learning Earth with Artificial Intelligence and Physics (LEAP) Science and Technology Center, based at Columbia University. 
+This is a repo for planning and tracking progress on the LEAP-Cryo project: *Learning ice-sheet flow with physics-based and machine learning models*. This project is funded by the Learning Earth with Artificial Intelligence and Physics (LEAP) Science and Technology Center, based at Columbia University. 
 
 We will track to do items and problems we encounter in the issues in this repo. Code development can occur either in this repop or in other repos created for specific subsets of the project. 
 
 ## Current project participants
 Inital project participants (in alphabetical order):
 
-Xianglong Bai, Columbia
-
-Jonny Kingslake, LDEO/Columbia, @jkingslake
+Xianglong Bai, Columbia,
 
 Andrew Hoffman, UW/LDEO/Columbia, @hoffmaao
 
+Jonny Kingslake, LDEO/Columbia, @jkingslake
+
 Xuyuan Meng, Columbia, @novoland075
 
-Hengbo Tong, Columbia, @Templar129
-
 David Porter, LDEO/Columbia, @porterdf
+
+Hengbo Tong, Columbia, @Templar129
 
 Laure Zanna, NYU, @LaureZanna 
 
@@ -35,4 +35,9 @@ We will start by establishing a workflow for running an ensemble of ice-flow sim
 
 With this workflow in place, we will aim to start running a large ensemble of forward simulations that will later be used for the training of ML models. 
 
+## First steps
 
+First steps on this project include
+- new participants learning the fundamentals of ice sheet dynamics
+- installing Icepack (https://github.com/ldeo-glaciology/LEAP-Cryo-planning/issues/2)
+- running test simulations that ship with Icepack
