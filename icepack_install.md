@@ -56,7 +56,22 @@ change directory back to where you installed firdrake and run
 
 ### 2.2. Install useful packages
 
+Comment out the last two lines in $VIRTUAL_ENV/src/icepack and add jupyterlab to the list, then run
+
 ```
 cd $VIRTUAL_ENV/src/icepack
 pip install -r requirements.txt
 ```
+
+Install gmsh: ```brew install gmsh```
+
+### 2.3. Test icepack
+```pytest -s test/ice_shelf_test.py```
+
+## 3. Work through the tutorial notebooks
+
+```
+cd $VIRTUAL_ENV/src/icepack/notebooks
+jupyter-lab
+```
+
