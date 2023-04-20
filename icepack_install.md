@@ -60,9 +60,16 @@ change directory back to where you installed firedrake and run
 
 ```python firedrake/bin/firedrake-update --install icepack```
 
-### 2.2. Install useful packages
+### 2.2. Install packages
 
-Comment out the last two lines in $VIRTUAL_ENV/src/icepack/requirements.txt and add 'jupyterlab' to the list, then run
+Comment out the last two lines in $VIRTUAL_ENV/src/icepack/requirements.txt, i.e. open the file and change the last two lines to 
+
+```
+#roltrilinos[opt]==0.0.9
+#ROL[opt]==0.0.16
+```
+
+Also, while you have that file open, add 'jupyterlab' to the end of the list of packages. Then install them by running
 
 ```
 cd $VIRTUAL_ENV/src/icepack
@@ -77,7 +84,7 @@ Install gmsh:
 ```pytest -s test/ice_shelf_test.py```
 
 ### 3. Work through the tutorial notebooks
-These steps should have successfully installed icepack. A good firs step in learning how to use the software is to work through the tutorial notebooks:
+These steps should have successfully installed icepack. A good first step in learning how to use the software is to work through the tutorial notebooks:
 
 ```
 cd $VIRTUAL_ENV/src/icepack/notebooks
