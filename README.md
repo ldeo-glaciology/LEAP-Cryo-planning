@@ -1,14 +1,12 @@
-# LEAP-Cryo-planning
+# Learning ice-sheet flow with physics-based and machine learning models
 
 ##  Introduction
 This is a repo for planning and tracking progress on the LEAP-Cryo project: *Learning ice-sheet flow with physics-based and machine learning models*. This project is funded by the Learning Earth with Artificial Intelligence and Physics (LEAP) Science and Technology Center, based at Columbia University. 
 
-We will track to do items and problems we encounter in the issues in this repo. Code development can occur either in this repop or in other repos created for specific subsets of the project. 
+We will track to do items and problems we encounter in the issues in this repo. Code development can occur either in this repo or in other repos created for specific subsets of the project. 
 
 ## Current project participants
-Inital project participants (in alphabetical order):
-
-Xianglong Bai, Columbia,
+Initial project participants (in alphabetical order):
 
 Andrew Hoffman, UW/LDEO/Columbia, @hoffmaao
 
@@ -25,7 +23,7 @@ Laure Zanna, NYU, @LaureZanna
 
 ## Project description 
 
-This descripion lays out the first steps of this project at a high level
+This description lays out the first steps of this project at a high level
 
 Ice sheets are accumulations of ice 100's to 1000's of meter thick and 1000's of km across. They are so large that small changes in their size affects sea level, which affects coastal communities around the world. Ice sheets 'slide' over the sediments and rock beneath them. This is one main way that ice sheets shrink and cause sea-level rise, so it's very important to accurately describe sliding in models used to predict sea level.
 
@@ -35,9 +33,6 @@ We will start by establishing a workflow for running an ensemble of ice-flow sim
 
 With this workflow in place, we will aim to start running a large ensemble of forward simulations that will later be used for the training of ML models. 
 
-## First steps
+## Current activities
 
-First steps on this project include
-- new participants learning the fundamentals of ice sheet dynamics
-- installing Icepack (https://github.com/ldeo-glaciology/LEAP-Cryo-planning/issues/2)
-- running test simulations that ship with Icepack
+Having installed Icepack, we are now working on describing subglacial topography using an (variational) autoencoder. 
