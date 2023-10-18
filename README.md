@@ -6,13 +6,13 @@ This is a repo for planning and tracking progress on the LEAP-Cryo project: *Lea
 We will track to do items and problems we encounter in the issues in this repo. Code development can occur either in this repo or in other repos created for specific subsets of the project. 
 
 ## Current project participants
-Initial project participants (in alphabetical order):
+Project participants (in alphabetical order):
 
 Andrew Hoffman, UW/LDEO/Columbia, @hoffmaao
 
 Jonny Kingslake, LDEO/Columbia, @jkingslake
 
-Xuyuan Meng, Columbia, @novoland075
+Racheet Matai, soon-to-be LDEO/Columbia
 
 David Porter, LDEO/Columbia, @porterdf
 
@@ -23,7 +23,7 @@ Laure Zanna, NYU, @LaureZanna
 
 ## Project description 
 
-This description lays out the first steps of this project at a high level
+This description lays out the first steps of this project at a high level.
 
 Ice sheets are accumulations of ice 100's to 1000's of meter thick and 1000's of km across. They are so large that small changes in their size affects sea level, which affects coastal communities around the world. Ice sheets 'slide' over the sediments and rock beneath them. This is one main way that ice sheets shrink and cause sea-level rise, so it's very important to accurately describe sliding in models used to predict sea level.
 
