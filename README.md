@@ -12,7 +12,7 @@ Andrew Hoffman, UW/LDEO/Columbia, @hoffmaao
 
 Jonny Kingslake, LDEO/Columbia, @jkingslake
 
-Racheet Matai, soon-to-be LDEO/Columbia
+Racheet Matai, soon-to-be LDEO/Columbia, @racheetmatai
 
 David Porter, LDEO/Columbia, @porterdf
 
