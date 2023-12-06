@@ -14,7 +14,7 @@ ML-glaciology papers:
 - Bolibar, J., Sapienza, F., Maussion, F., Lguensat, R., Wouters, B. and Pérez, F., 2023. Universal Differential Equations for glacier ice flow modelling. Geoscientific Model Development Discussions, 2023, pp.1-26. [url](https://gmd.copernicus.org/articles/16/6671/2023/gmd-16-6671-2023-discussion.html)
 - Jouvet, G., Cordonnier, G., Kim, B., Lüthi, M., Vieli, A. and Aschwanden, A., 2022. Deep learning speeds up ice flow modelling by several orders of magnitude. Journal of Glaciology, 68(270), pp.651-664.[url](https://www.cambridge.org/core/journals/journal-of-glaciology/article/deep-learning-speeds-up-ice-flow-modelling-by-several-orders-of-magnitude/748E962A103D2AF45F4CA8823C88C0C0)
 - Jouvet, G., 2023. Inversion of a Stokes glacier flow model emulated by deep learning. Journal of Glaciology, 69(273), pp.13-26. [url](https://www.cambridge.org/core/journals/journal-of-glaciology/article/inversion-of-a-stokes-glacier-flow-model-emulated-by-deep-learning/40A3BBE3E1747E1D93B37C57268748DF)
-
+- Wang, Y., Lai, C.Y. and Cowen-Breen, C., 2022. Discovering the rheology of Antarctic Ice Shelves via physics-informed deep learning. (preprint) [url](https://assets.researchsquare.com/files/rs-2135795/v1/1c0f344eb9b7ef8a61058ad8.pdf?c=1669779218)
 
 bed properties papers:
 - Aitken, A.R., Li, L., Kulessa, B., Schroeder, D.M., Jordan, T.A., Whittaker, J.M., Anandakrishnan, S., Dawson, E.J., Wiens, D.A., Eisen, O. and Siegert, M.J., 2023. Antarctic sedimentary basins and their influence on ice sheet dynamics. Authorea Preprints. [url](https://d197for5662m48.cloudfront.net/documents/publicationstatus/141443/preprint_pdf/739e813822ba8a2d854157bcbe8971bf.pdf)
