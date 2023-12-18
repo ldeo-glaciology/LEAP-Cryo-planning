@@ -83,7 +83,7 @@ Install gmsh:
 ### 2.3. Test icepack
 ```pytest -s test/ice_shelf_test.py```
 
-### 3. Work through the tutorial notebooks
+## 3. Work through the tutorial notebooks
 These steps should have successfully installed icepack. A good first step in learning how to use the software is to work through the tutorial notebooks:
 
 ```
@@ -91,3 +91,78 @@ cd $VIRTUAL_ENV/src/icepack/notebooks
 jupyter-lab
 ```
 
+## 4. Install icepack using docker
+The current version of icepack seems to be broken (12/10/2023) because firedrake comes with an older version of icepack installed which causes pathing issues. To get around this we can use a docker image with an older version of firedrake already installed. We will follow the steps listed on the [icepack install page](https://icepack.github.io/install/) but switch out the image for an older image. The following steps were performed on Ubuntu 22.04.3 LTS. 
+
+### 4.1 Install docker
+Follow steps listed on the [docker website](https://docs.docker.com/engine/install/ubuntu/)
+
+The method under `Install using the apt repository` was used which seems to work fine.
+
+### 4.2 Create Dockerfile
+A Dockerfile contains a set of instructions which are followed so that we get an image which has everything we require. In this instance, we will create a dockerfile that uses an image with an older firedrake installation (from 09/2023) and install icepack on top of it. Copy paste the contents below into a textfile and name it `Dockerfile`
+
+```
+FROM firedrakeproject/firedrake-vanilla:2023-09
+RUN sudo apt update && sudo apt install patchelf
+RUN source firedrake/bin/activate && \
+pip install git+https://github.com/icepack/Trilinos.git && \
+pip install git+https://github.com/icepack/pyrol.git && \
+git clone https://github.com/icepack/icepack.git && \
+pip install --editable ./icepack && \
+pip install jupyter lab
+```
+### 4.3 Create docker image with icepack installed
+Run 
+
+```docker build --tag icepack-image <directory>```
+
+`<directory>` is the folder where the Dockerfile lives on your machine. If this give a permission denied error, run using `sudo`. Do this for all future docker commands if required. There are ways around to not using sudo but .....
+
+### 4.4 Run the created image
+
+Interactively run the image using
+
+```
+docker run \
+    --interactive --tty \
+    --publish 8888:8888 \
+    icepack-image
+```
+
+if you want to access a local folder inside the image refer to the [icepack installation](https://icepack.github.io/install/) page. 
+
+### 4.5 Test icepack installation
+Activate the firedrake environment
+
+```
+source ~/firedrake/bin/activate
+```
+
+Run test script
+```
+pytest -s icepack/test/ice_shelf_test.py
+```
+
+### 4.6 Using jupyter lab notebooks
+Make sure firedrake environment is activated. To ensure we use this environment in jupyter lab
+```
+pip install ipykernel
+python -m ipykernel install --user --name=firedrake
+```
+
+install `gmsh` since they are used by many tutorials
+```
+sudo apt-get install gmsh
+```
+
+run jupyter lab
+```
+jupyter lab --ip 0.0.0.0 --no-browser
+```
+
+if that gives an error try
+```
+~/.local/bin/jupyter lab --ip 0.0.0.0 --no-browser
+```
+The server will print a bunch of things, at the end of which will be a URL. If you paste that URL into your browser you should have access from your host system to the notebook server that's now running in the container.
