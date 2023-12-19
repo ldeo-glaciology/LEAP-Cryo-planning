@@ -119,7 +119,7 @@ Run
 
 ```docker build --tag icepack-image <directory>```
 
-`<directory>` is the folder where the Dockerfile lives on your machine. If this give a permission denied error, run using `sudo`. Do this for all future docker commands if required. There are ways around to not using sudo but .....
+`<directory>` is the folder where the Dockerfile lives on your machine. If this give a permission denied error, run using `sudo`. Do this for all future docker commands if required. This [link](https://stackoverflow.com/questions/47854463/docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socke) might be useful if you do not want to use `sudo`.
 
 ### 4.4 Run the created image
 
