@@ -99,6 +99,8 @@ Follow steps listed on the [docker website](https://docs.docker.com/engine/insta
 
 The method under `Install using the apt repository` was used which seems to work fine.
 
+Instruction for Macs with Apple silicon or intel chips can be found [here](https://docs.docker.com/desktop/install/mac-install/)
+
 ### 4.2 Create Dockerfile
 A Dockerfile contains a set of instructions which are followed so that we get an image which has everything we require. In this instance, we will create a dockerfile that uses an image with an older firedrake installation (from 09/2023) and install icepack on top of it. Copy paste the contents below into a textfile and name it `Dockerfile`
 
