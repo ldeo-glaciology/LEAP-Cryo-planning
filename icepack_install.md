@@ -121,6 +121,10 @@ Run
 
 `<directory>` is the folder where the Dockerfile lives on your machine. If this give a permission denied error, run using `sudo`. Do this for all future docker commands if required. This [link](https://stackoverflow.com/questions/47854463/docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socke) might be useful if you do not want to use `sudo`.
 
+If you are on MacOS and run into an error like `ERROR: failed to solve: firedrakeproject/firedrake-vanilla:2023-09: error getting credentials - err: exit status 1, out: "`, update the docker config file.
+1. Run `sudo open $HOME/.docker/config.json`
+2. Edit the `credsStore` variable from "desktop" to "osxkeychain" and save. Then try re-running the build command. 
+
 ### 4.4 Run the created image
 
 Interactively run the image using
